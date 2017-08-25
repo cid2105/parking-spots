@@ -1,13 +1,13 @@
 [
     {
         "id": 0,
-        "name": "Acadia",
+        "name": "Harvard Innovation Lab",
         "createDate": "February 26, 1919",
         "lat": 44.35,
         "long": -68.21,
         "distance": 0,
         "image": "acadia.jpg",
-        "state": "Maine",
+        "state": "18/20",
         "data": "Covering most of Mount Desert Island and other coastal islands, Acadia preserves the tallest mountain on the Atlantic coast, granite peaks, ocean shoreline, woodlands, and lakes. There are freshwater, estuary, forest, and intertidal habitats."
     },
     {

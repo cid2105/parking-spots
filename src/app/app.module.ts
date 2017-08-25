@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ParkListPage } from '../pages/park-list/park-list';
 import { ParkMapPage } from '../pages/park-map/park-map';
+import { ParkDetailsPage } from '../pages/park-details/park-details';
 import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     MyApp,
     ParkListPage,
     ParkMapPage,
+    ParkDetailsPage,
     TabsPage
   ],
   imports: [
@@ -26,6 +28,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     MyApp,
     ParkListPage,
     ParkMapPage,
+    ParkDetailsPage,
     TabsPage
   ],
   providers: [
