@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Parking Spots</ion-title>
+    <ion-title>Harvard Parking</ion-title>
   </ion-navbar>
 
   <ion-toolbar>
@@ -18,10 +18,10 @@
 		<ion-item *ngFor="let park of parks"
 				  (click)="goParkDetails(park)" detail-push>
 			<ion-thumbnail item-left>
-				<img src="assets/img/thumbs/{{park.image}}">
+				<img src="https://s3.amazonaws.com/parking-spots/{{park.image_name}}">
 			</ion-thumbnail>
-			<h2>{{park.name}}</h2>
-			<p>{{park.state}}</p>
+			<h2>{{park.location_id}}</h2>
+			<p>{{ park.capacity - park.vacancies }} / {{ park.capacity }}</p>
 		</ion-item>
 	</ion-list>			
 </ion-content>

@@ -32,7 +32,7 @@ export class ParkMapPage {
 
   	initializeMap() {
 
-  		let minZoomLevel = 10;
+  		let minZoomLevel = 14;
 
   		this.map = new google.maps.Map(document.getElementById('map_canvas'), {
   			zoom: minZoomLevel,
@@ -48,7 +48,7 @@ export class ParkMapPage {
         let image = 'assets/img/nps_arrowhead.png';
 
         for (let thePark of this.parks) {
-            let parkPos:google.maps.LatLng = new google.maps.LatLng (thePark.lat, thePark.long);
+            let parkPos:google.maps.LatLng = new google.maps.LatLng (thePark.latitude, thePark.longitude);
             let parkMarker:google.maps.Marker = new CustomMapMarker(thePark);
             parkMarker.setPosition(parkPos);
             parkMarker.setMap(this.map);

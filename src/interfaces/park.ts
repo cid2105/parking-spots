@@ -1,11 +1,12 @@
 export interface Park {
-	id: number;
+	location_id: string;
 	name: string;
-	createDate: string;
-	lat: number;
-	long: number;
-	distance: number;
-	image: string;
-	state: string;
+	image_name: string;
+	latitude: number;
+	longitude: number;
+	capacity: number;
+	vacancies: number;
+	occupancies: number;
+	last_updated: string;
 	data: string;
 }
