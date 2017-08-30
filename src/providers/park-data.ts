@@ -14,7 +14,7 @@ export class ParkData {
 		}
 
 		return new Promise(resolve => {
-			this.http.get('api/locations')
+			this.http.get('https://parking-spots-backend.herokuapp.com/locations')
 			.map(res => res.json())
 			.subscribe(data => {
 				this.data = data;
@@ -33,7 +33,7 @@ export class ParkData {
   	  	return this.load().then(Parks => {
     	  	let theFilteredParks: any = [];
       		for (let thePark of Parks) {
-        		if(thePark.location_id.toLowerCase().indexOf(queryString.toLowerCase()) > -1) {
+        		if(thePark.display_name.toLowerCase().indexOf(queryString.toLowerCase()) > -1) {
           			theFilteredParks.push(thePark);
         		}
       		}

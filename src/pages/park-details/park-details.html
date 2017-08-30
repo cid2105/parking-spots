@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{parkInfo.location_id}}</ion-title>
+    <ion-title>{{parkInfo.display_name}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,10 +15,10 @@
 
 <ion-content>
 	<img src="https://s3.amazonaws.com/parking-spots/{{parkInfo.image_name}}">
-	<h1 padding>{{parkInfo.location_id}}</h1>
+	<h1 padding>{{parkInfo.display_name}}</h1>
 	<ion-card>
 		<ion-card-header>
-			{{ parkInfo.vacancies }} Vacancies
+			{{ parkInfo.vacancies }} occupancies
  		</ion-card-header>
 		<ion-card-content>
 			{{parkInfo.capacity}} total spots

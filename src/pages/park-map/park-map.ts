@@ -36,7 +36,7 @@ export class ParkMapPage {
 
   		this.map = new google.maps.Map(document.getElementById('map_canvas'), {
   			zoom: minZoomLevel,
-  			center: new google.maps.LatLng(42.3736, -71.1097),
+  			center: new google.maps.LatLng(42.3641, -71.1242),
   			mapTypeControl: false,
   			streetViewControl: false,
   			mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -52,7 +52,7 @@ export class ParkMapPage {
             let parkMarker:google.maps.Marker = new CustomMapMarker(thePark);
             parkMarker.setPosition(parkPos);
             parkMarker.setMap(this.map);
-            parkMarker.setIcon(image);
+            //parkMarker.setIcon(image);
 
             google.maps.event.addListener(parkMarker, 'click', () => {
               let selectedMarker:any = parkMarker;
